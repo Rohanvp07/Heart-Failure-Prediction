@@ -5,6 +5,7 @@ Most cardiovascular diseases can be prevented by addressing behavioural risk fac
 
 People with cardiovascular disease or who are at high cardiovascular risk (due to the presence of one or more risk factors such as hypertension, diabetes, hyperlipidaemia or already established disease) need early detection and management wherein a machine learning model can be of great help.
 
-Attempt | Feature | Explanation | Measurement | Range 
---- | --- | --- | --- |--- 
-Seconds | 301 | 283 | 290 | 286 
+Feature | Explanation | Measurement | Range 
+--- | --- | --- |--- 
+Age | Age of the patient | Years |	[40,..., 95]
+Anaemia	| Decrease of red blood cells or hemoglobin |	Boolean |	0, 1
