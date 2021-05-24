@@ -148,7 +148,7 @@ def input_page():
                         serum_creatinine,serum_sodium,sex,time]])
         result = model.predict(test)[0]
         if result==0:
-            st.markdown('<p class="sucess_class"><b>Survived</b></p>', unsafe_allow_html=True)
+            st.markdown('<p class="success_class"><b>Survived</b></p>', unsafe_allow_html=True)
 
         if result==1:
             st.markdown('<p class="error_class"><b>Dead</b></p>', unsafe_allow_html=True)
