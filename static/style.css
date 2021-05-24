@@ -1,0 +1,173 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: DodgerBlue; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e6d200; 
+}
+body {
+    background-image: url("https://techcrunch.com/wp-content/uploads/2019/07/internet-heartbeat.gif?w=610");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+    text-align: center;
+}
+.cal{
+	padding: 5px;
+	position: relative;
+	background: linear-gradient(45deg, #d0e69d, #f3d1a9, #ee9696, #b7b8eb, #e0e4e1, #d7e1ec);
+	background-size: 500% 500%;
+	animation: change-gradient 3s ease-in-out infinite;
+}
+@keyframes change-gradient {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+.navbar {
+    background-color: #333333;
+}
+p
+{
+	color: black;
+font-family: 'Barriecito', cursive;
+}
+a {
+    color: black;
+}
+h1{
+	color: #004080;
+font-family: 'Barriecito', cursive;
+}
+h5{
+	color: #4dd2ff;
+}
+.danger
+{
+    color: red;
+}
+.safe
+{
+    color: green;
+}
+
+a:hover {
+    color: #f0f0f0;
+  }
+  
+  .card{
+	background-color: #33333360;
+	border-color: #b3ffff;
+  }
+  
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  background-color: DodgerBlue;
+  color:black
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input[type=number] {
+    width: 80%;
+   
+    box-sizing: border-box;  
+}
+input[type=text] {
+    width: 40%;
+   
+    box-sizing: border-box;  
+}
+.footer {
+	color: #e4e0e0;
+	background: linear-gradient(45deg, #d0e69d, #f3d1a9, #ee9696, #b7b8eb, #e0e4e1, #d7e1ec);
+	background-size: 500% 500%;
+	animation: change-gradient 3s ease-in-out infinite;
+	text-align:center;
+	bottom: 0;
+ 	width: 100%;
+	padding:2px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
