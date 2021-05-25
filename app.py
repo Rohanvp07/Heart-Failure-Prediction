@@ -25,13 +25,13 @@ def predict():
     	serum_sodium = request.form['Serum_Sodium']
     	time = request.form['Time']
     	
-    #age = scaler.transform(np.array(float(age)).reshape(-1,1))
-    #creatinine_phosphokinase = scaler.transform(np.array(float(creatinine_phosphokinase)).reshape(-1,1))
-    #ejection_fraction = scaler.transform(np.array(float(ejection_fraction)).reshape(-1,1))
-    #platelets = scaler.transform(np.array(float(platelets)).reshape(-1,1))
-    #serum_creatinine = scaler.transform(np.array(float(serum_creatinine)).reshape(-1,1))
-    #serum_sodium = scaler.transform(np.array(float(serum_sodium)).reshape(-1,1))
-    #time = scaler.transform(np.array(float(time)).reshape(-1,1))
+    age = scaler.transform(np.array(float(age)).reshape(-1,1))
+    creatinine_phosphokinase = scaler.transform(np.array(float(creatinine_phosphokinase)).reshape(-1,1))
+    ejection_fraction = scaler.transform(np.array(float(ejection_fraction)).reshape(-1,1))
+    platelets = scaler.transform(np.array(float(platelets)).reshape(-1,1))
+    serum_creatinine = scaler.transform(np.array(float(serum_creatinine)).reshape(-1,1))
+    serum_sodium = scaler.transform(np.array(float(serum_sodium)).reshape(-1,1))
+    time = scaler.transform(np.array(float(time)).reshape(-1,1))
 
     if gender=="Male":
         sex=1
