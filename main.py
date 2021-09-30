@@ -108,15 +108,15 @@ def input_page():
 
     highbp = st.selectbox('Do you have High Blood Pressure?', ["Yes","No"])    
 
-    creatinine_phosphokinase = st.number_input('Creatinine Phosphokinase')
+    creatinine_phosphokinase = st.number_input('Creatinine Phosphokinase (mcg/L [23,…, 7861])')
 
-    ejection_fraction = st.number_input('Ejection Fraction')
+    ejection_fraction = st.number_input('Ejection Fraction (in % [14,…, 80])')
 
-    platelets = st.number_input('Platelets')
+    platelets = st.number_input('Platelets (kiloplatelets/mL[25.01,…, 850.00])')
 
-    serum_creatinine = st.number_input('Serum Creatinine')
+    serum_creatinine = st.number_input('Serum Creatinine (mg/dL[0.50,…, 9.40])')
     
-    serum_sodium = st.number_input('Serum Sodium')
+    serum_sodium = st.number_input('Serum Sodium (mEq/L[114,…, 148])')
 
     time = st.number_input('Time')
     
